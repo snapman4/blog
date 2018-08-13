@@ -15,12 +15,12 @@
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
-        {% for post in posts %}
-            <div>
-                <p>published: {{ post.publish_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
-                <p>{{ post.text|linebreaksbr }}</p>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.publish_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
             </div>
-        {% endfor %}
+    {% endfor %}
     </body>
 </html>
