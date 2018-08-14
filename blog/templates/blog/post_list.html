@@ -6,24 +6,16 @@
     </head>
     <body>
         <div>
-    <h1><a href="/">test Blog</a></h1>
-</div>
+            <h1><a href="/">test Blog</a></h1>
+        </div>
 
-
-{% for post in posts %}
-    <div>
-        <p>published: {{ post.publish_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
 
     {% for post in posts %}
         <div>
             <p>published: {{ post.publish_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+        </div>
     {% endfor %}
 
     </body>
